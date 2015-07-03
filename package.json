@@ -1,0 +1,13 @@
+{
+  "name": "ang-reg",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "angular": "^1.4.1",
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
