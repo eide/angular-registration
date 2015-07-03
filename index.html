@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body ng-app="registration">
+  <h1>HELLO</h1>
+
+  <div ng-controller="tabswitcher">
+    <div>
+      <button ng-click="tab = 1">#1</button>
+      <button ng-click="tab = 2" ng-disabled="!data.tab1.valid">#2</button>
+      <button ng-click="tab = 3" ng-disabled="!data.tab1.valid || !data.tab2.valid">#3</button>
+      <button ng-click="tab = 4" ng-disabled="!data.tab1.valid || !data.tab2.valid || !data.tab3.valid">#4</button>
+    </div>
+
+    <div>
+      <form name="registrationForm">
+        <div step1 ng-show="tab == 1"></div>
+        <div step2 ng-show="tab == 2"></div>
+        <div step3 ng-show="tab == 3"></div>
+        <div step4 ng-show="tab == 4"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="dist/app.js"></script>
+</body>
+
+</html>
